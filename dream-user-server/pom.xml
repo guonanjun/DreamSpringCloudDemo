@@ -71,45 +71,4 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>dev-release</id>
-            <name>dev-release</name>
-            <url>http://maven.dream7788.com/repository/dev-release/</url>
-        </repository>
-        <snapshotRepository>
-            <id>dev-snapshots</id>
-            <name>dev-snapshots</name>
-            <url>http://maven.dream7788.com/repository/dev-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-    <repositories>
-        <repository>
-            <id>dev-public</id>
-            <name>dev-public</name>
-            <url>http://maven.dream7788.com/repository/dev-public/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>dev-public</id>
-            <name>dev-public</name>
-            <url>http://maven.dream7788.com/repository/dev-public/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
-
 </project>
