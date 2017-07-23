@@ -1,5 +1,0 @@
-com\dream7788\cloud\demo\user\controller\UserController.class
-com\dream7788\cloud\demo\user\feign\fallback\CodeFeignClientFallbackFacoty$1.class
-com\dream7788\cloud\demo\user\UserApplication.class
-com\dream7788\cloud\demo\user\feign\CodeFeignClient.class
-com\dream7788\cloud\demo\user\feign\fallback\CodeFeignClientFallbackFacoty.class
