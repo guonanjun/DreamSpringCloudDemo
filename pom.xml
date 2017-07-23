@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dram7788.demo</groupId>
+    <artifactId>dream-spring-cloud-demo</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>dream-eureka-server</module>
+        <module>dream-eureka-ha-peer1-server</module>
+        <module>dream-eureka-ha-peer2-server</module>
+        <module>dream-eureka-ha-peer3-server</module>
+        <module>dream-code-server</module>
+        <module>dream-user-server</module>
+        <module>dream-common-api</module>
+        <module>dream-turbine-server</module>
+        <module>dream-hystrix-server</module>
+        <module>dream-config-server</module>
+        <module>dream-product-server</module>
+        <module>dream-zuul-server</module>
+    </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>dev-release</id>
+            <name>dev-release</name>
+            <url>http://maven.dream7788.com/repository/dev-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>dev-snapshots</id>
+            <name>dev-snapshots</name>
+            <url>http://maven.dream7788.com/repository/dev-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>dev-public</id>
+            <name>dev-public</name>
+            <url>http://maven.dream7788.com/repository/dev-public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>dev-public</id>
+            <name>dev-public</name>
+            <url>http://maven.dream7788.com/repository/dev-public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+</project>

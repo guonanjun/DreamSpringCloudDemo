@@ -1,0 +1,32 @@
+server:
+  port: 11000
+spring:
+  application:
+    name: dream-code-server   #指定注册到Eureka Server的应用名称
+  cloud:
+    inetutils:
+#      preferredNetworks:
+#        - 192.168.1.           #指定网段
+      ignored-interfaces:
+        - VM.*                  #忽略的网卡
+    client:
+      ipAddress: 192.168.1.159  #指定IP
+
+#显示info信息
+info:
+  app:
+    name: @project.artifactId@
+    encoding: @project.build.sourceEncoding@
+    java:
+      source: @java.version@
+      target: @java.version@
+
+eureka:
+  instance:
+    preferIpAddress: true   #将IP注册到Eureka Server
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}    #实例ID设置成IP:端口的形式
+  client:
+    service-url:
+      defaultZone: http://dream7788:dream7788@192.168.1.159:20001/eureka,http://dream7788:dream7788@192.168.1.159:20002/eureka,http://dream7788:dream7788@192.168.1.159:20003/eureka
+
+
